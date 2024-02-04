@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main  
+local_backend: true
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+site_url: https://[SITENAME].netlify.app # checkit
+display_url: https://[SITENAME].netlify.app # checkit
+logo_url: https://[SITENAME].netlify.app/assets/graphics/favicon.svg # checkit
+editor:
+  preview: false
+slug:
+  encoding: "ascii"
+  clean_accents: true
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "src/post"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "array" }
+      - { label: "Place", name: "place", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - name: "content_section"
+        label: "Content"
+        widget: "list"
+        required: false
+        types:
+          - name: "content_image"
+            label: "Image"
+            widget: "object"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                media_library:
+                  config:
+                    max_file_size: 512000
+          - name: "content_embed"
+            label: "Embed"
+            widget: "object"
+            summary: "{{fields.embed}}"
+            fields:
+              - { label: "Embed", name: "embed", widget: "string" }
+  - name: "page"
+    label: "Pages"
+    files:
+      - name: "index"
+        label: "Index"
+        file: "src/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "File", name: "file", widget: "file", media_folder: "/public/assets/files", public_folder: "/assets/files" }

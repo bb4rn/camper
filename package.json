@@ -1,0 +1,46 @@
+{
+  "name": "camper",
+  "version": "1.0.0",
+  "description": "An Eleventy / Decap CMS starter kit.",
+  "source": [
+    "src/assets/js/main.js",
+    "src/assets/js/decap-cms.js",
+    "src/assets/css/main.sass"
+  ],
+  "scripts": {
+    "dev:cms": "npx netlify-cms-proxy-server",
+    "dev:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "dev:parcel": "parcel --dist-dir public/assets",
+    "build:parcel": "parcel build --dist-dir public/assets",
+    "dev": "run-p dev:*",
+    "build": "run-s build:*"
+  },
+  "author": "camp notes",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.0.0",
+    "@parcel/transformer-sass": "^2.10.3",
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "eleventy-plugin-embed-everything": "^1.17.0",
+    "excerpt-html": "^1.2.2",
+    "markdown-it": "^14.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.10.3",
+    "process": "^0.11.10",
+    "smartypants": "^0.2.2"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "@swup/route-name-plugin": "^3.0.2",
+    "@swup/scroll-plugin": "^2.0.3",
+    "add-to-calendar-button": "^2.4.3",
+    "decap-cms-app": "^3.1.1",
+    "is-mobile": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "leaflet-active-area": "^1.2.1",
+    "netlify-identity-widget": "^1.9.2",
+    "swup": "^3.1.1"
+  }
+}

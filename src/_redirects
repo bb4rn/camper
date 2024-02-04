@@ -1,0 +1,2 @@
+# from                  to                              status code
+# /admin/config.yml     /.netlify/functions/config      200!

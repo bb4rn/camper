@@ -1,0 +1,16 @@
+{% include "partials/campnotes_ascii.njk" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'partials/head.njk' %}
+<body>
+	{% include 'partials/header.njk' %}
+
+	<main id="swup" class="transition-fade padding-main">
+		<h1>{{ title }}</h1>
+		{{ content | safe }}
+	</main>
+
+	{% include 'partials/footer.njk' %}
+</body>
+</html>

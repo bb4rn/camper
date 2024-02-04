@@ -1,0 +1,11 @@
+{% for item in collections.index %}
+ {% set title = item.data.title %}
+ {% set credit = item.data.credit %}
+{% endfor %}
+
+
+<footer class="padding-main flex-center-y">
+ <div id="footerCopy">
+  © {{ credit }}
+ </div>
+</footer>
