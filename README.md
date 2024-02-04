@@ -17,7 +17,7 @@ This project only uses free and/or open-source tools and is (currently) free to 
 - `npm run dev` to run a local development server with live reload (served over `localhost:8080`)
 - `npm run build` to build everything (without starting a local server)
 
-By default Eleventy builds files from `/src` to `/public` (see in `/.eleventy.js`), while Parcel takes `/js/main.js` as an entry point and builds to `/public` (see `/package.json`). (Before going live, look for the "checkit" comments to customize site names and stuff.)
+By default, Eleventy builds files from `/src` to `/public` (see in `/.eleventy.js`), while Parcel takes `/assets/js/main.js` and `/assets/css/main.sass` as entry points and builds to `/public/assets/js` and `/public/assets/css` accordingly (see or configure in `/package.json`). Before going live, look for the "checkit" comments to customize site names and stuff.
 
 ## Features
 
@@ -46,7 +46,7 @@ By default Eleventy builds files from `/src` to `/public` (see in `/.eleventy.js
 - [excerpt-html](https://www.npmjs.com/package/excerpt-html) for text excerpts
 
 ### Development tools
-- [Parcel](https://parceljs.org/) for parsing `.sass` to `.css` and bundling `.js`
+- [Parcel](https://parceljs.org/) for parsing and bundling `.sass` to `.css` and bundling `.js`
 
 ---
 
