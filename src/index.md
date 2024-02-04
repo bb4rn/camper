@@ -5,8 +5,8 @@ credit: 🏕️ camp notes
 description: description
 image:
 tags:
-- index
-- page
+  - index
+  - page
 ---
 
 hello world!
