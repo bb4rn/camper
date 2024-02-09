@@ -7,6 +7,7 @@
     "src/assets/js/decap-cms.js",
     "src/assets/css/main.sass"
   ],
+  "browserslist": "> 0.5%, last 3 versions, not dead",
   "scripts": {
     "dev:cms": "npx netlify-cms-proxy-server",
     "dev:eleventy": "eleventy --serve",
@@ -23,6 +24,7 @@
     "@11ty/eleventy-img": "^3.0.0",
     "@parcel/transformer-sass": "^2.10.3",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "browserslist": "^4.22.3",
     "eleventy-plugin-embed-everything": "^1.17.0",
     "excerpt-html": "^1.2.2",
     "markdown-it": "^14.0.0",
