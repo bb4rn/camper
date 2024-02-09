@@ -1,3 +1,6 @@
+// import utils
+import { log, get, getAll } from "./utils.js";
+
 // import npm packages
 import "add-to-calendar-button";
 import Glide from "@glidejs/glide";
@@ -22,9 +25,9 @@ const swup = new Swup({
 
 document.addEventListener("DOMContentLoaded", function () {
   // update footer credits with current year
-  let currentFooter = document.getElementById("footerCopy").innerHTML;
-  newFooter = "© " + new Date().getFullYear() + currentFooter.split("©")[1];
-  document.getElementById("footerCopy").innerHTML = newFooter;
+  let footerCopy = get("#footerCopy");
+  footerCopy.innerHTML =
+    "© " + new Date().getFullYear() + footerCopy.innerHTML.split("©")[1];
 });
 
 // decap cms
@@ -40,4 +43,5 @@ const netlifyIdentity = () => {
   }
 };
 
+// netlify identity widget
 netlifyIdentity();

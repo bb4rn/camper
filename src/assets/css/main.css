@@ -1,27 +1,27 @@
 /* import files */
-@import url("reset.css");
-@import url("utils.css");
+@import url("./reset.css");
+@import url("./utils.css");
 /* @import "node_modules/@glidejs/glide/src/assets/sass/glide.core" */
 
 /* styles */
 body {
-  font: 18px $font-stack;
-  color: $color-txt;
-  background-color: $color-bg;
+  font: 18px var(--font-stack);
+  color: var(--color-txt);
+  background-color: var(--color-bg);
 }
 
 header {
-  height: $header-height;
+  height: var(--header-height);
   background-color: #fff;
 }
 
 main {
   background-color: #eee;
-  min-height: calc(100vh - $header-height - $footer-height);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 footer {
-  height: $footer-height;
+  height: var(--footer-height);
   background-color: #ddd;
 }
 
