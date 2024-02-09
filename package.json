@@ -5,7 +5,7 @@
   "source": [
     "src/assets/js/main.js",
     "src/assets/js/decap-cms.js",
-    "src/assets/css/main.sass"
+    "src/assets/css/main.css"
   ],
   "browserslist": "> 0.5%, last 3 versions, not dead",
   "scripts": {
@@ -22,7 +22,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "^3.0.0",
-    "@parcel/transformer-sass": "^2.10.3",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
     "browserslist": "^4.22.3",
     "eleventy-plugin-embed-everything": "^1.17.0",
