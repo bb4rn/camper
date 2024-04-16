@@ -8,15 +8,11 @@ import "leaflet";
 import "leaflet-active-area";
 import mobile from "is-mobile";
 import Swup from "swup";
-import SwupScrollPlugin from "@swup/scroll-plugin";
-import SwupRouteNamePlugin from "@swup/route-name-plugin";
 import "netlify-identity-widget";
 
 const swup = new Swup({
   // options
-  plugins: [
-    // new SwupScrollPlugin()
-  ],
+  plugins: [],
 });
 
 // new Glide('.glide').mount({

@@ -34,14 +34,12 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
-    "@swup/route-name-plugin": "^3.0.2",
-    "@swup/scroll-plugin": "^2.0.3",
     "add-to-calendar-button": "^2.4.3",
     "decap-cms-app": "^3.1.1",
     "is-mobile": "^4.0.0",
     "leaflet": "^1.9.4",
     "leaflet-active-area": "^1.2.1",
     "netlify-identity-widget": "^1.9.2",
-    "swup": "^3.1.1"
+    "swup": "^4.6.1"
   }
 }
